@@ -173,6 +173,12 @@ const pgCustomers = extend(pgCustomersDesign)(
 
                 Router.go("pgCustomerDetails", item.id);
             };
+            
+            lvCustomers.onPullRefresh = function() {
+                setTimeout(function() {
+                    lvCustomers.stopRefresh();
+                }, 3000);
+            };
 
         };
 
