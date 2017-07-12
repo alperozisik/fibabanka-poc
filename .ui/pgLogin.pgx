@@ -37,13 +37,13 @@
 					"loginPageHeader",
 					"userName",
 					"password",
-					"loginButton",
+					"flLoginButton",
 					"loginPageFooter"
 				],
 				"parent": null,
 				"name": "pgLogin",
-				"width": 187.5,
-				"height": 333.5
+				"width": 468.75,
+				"height": 833.75
 			},
 			"initialized": true
 		},
@@ -108,11 +108,7 @@
 					"alignItems": "CENTER",
 					"justifyContent": "CENTER",
 					"flexGrow": null
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -200,7 +196,7 @@
 			"userProps": {
 				"width": 132,
 				"height": 90,
-				"image": "fibabanka.jpg",
+				"image": "fibabanka.png",
 				"imageFillType": "ASPECTFIT"
 			},
 			"className": ".imageView",
@@ -214,7 +210,7 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"image": "fibabanka.jpg",
+				"image": "fibabanka.png",
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
@@ -222,7 +218,7 @@
 				"children": [],
 				"name": "headerText",
 				"parent": "loginPageHeader",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/fibabanka/ui-editor/img/fibabanka.jpg?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.055762815931713616"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/fibabanka/ui-editor/img/fibabanka.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -235,11 +231,7 @@
 				"height": 65,
 				"flexProps": {
 					"flexGrow": null
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -330,7 +322,7 @@
 			"userProps": {
 				"width": 334,
 				"height": 40,
-				"text": "annamiracle@template.com",
+				"text": "alper.ozisik@smartface.io\t",
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"borderColor": "rgba( 197, 197, 197, 1 )",
 				"textColor": "rgba( 63, 63, 63, 1 )",
@@ -344,7 +336,7 @@
 				"height": 40,
 				"width": 334,
 				"touchEnabled": true,
-				"text": "annamiracle@template.com",
+				"text": "alper.ozisik@smartface.io\t",
 				"visible": true,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"alpha": 1,
@@ -352,6 +344,7 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 63, 63, 63, 1 )",
 				"textAlignment": "MIDLEFT",
+				"usePageVariable": true,
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -364,8 +357,7 @@
 				},
 				"children": [],
 				"name": "userNameInput",
-				"parent": "userName",
-				"usePageVariable": true
+				"parent": "userName"
 			}
 		},
 		{
@@ -415,23 +407,19 @@
 			"themeProps": {},
 			"userProps": {
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"width": 335,
+				"width": null,
 				"height": 65,
 				"bottom": null,
 				"top": -10,
 				"flexProps": {
 					"flexGrow": null,
 					"bottom": 30
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
 				"height": 65,
-				"width": 335,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
@@ -519,7 +507,7 @@
 			"userProps": {
 				"width": 334,
 				"height": 40,
-				"text": "12345",
+				"text": "123qweASD",
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"borderColor": "rgba( 197, 197, 197, 1 )",
 				"textColor": "rgba( 63, 63, 63, 1 )",
@@ -535,7 +523,7 @@
 				"height": 40,
 				"width": 334,
 				"touchEnabled": true,
-				"text": "12345",
+				"text": "123qweASD",
 				"visible": true,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"alpha": 1,
@@ -545,6 +533,7 @@
 				"textAlignment": "MIDLEFT",
 				"top": null,
 				"isPassword": true,
+				"usePageVariable": true,
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -557,8 +546,7 @@
 				},
 				"children": [],
 				"name": "passwordInput",
-				"parent": "password",
-				"usePageVariable": true
+				"parent": "password"
 			}
 		},
 		{
@@ -600,53 +588,6 @@
 				"children": [],
 				"name": "passwordLine",
 				"parent": "password"
-			}
-		},
-		{
-			"type": "Button",
-			"id": "2865494e",
-			"themeProps": {},
-			"userProps": {
-				"backgroundColor": "rgba( 0, 108, 184, 1 )",
-				"width": null,
-				"text": "Login",
-				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": null
-				},
-				"font": {
-					"family": "Nunito",
-					"bold": true
-				}
-			},
-			"className": ".button",
-			"props": {
-				"width": null,
-				"height": 70,
-				"touchEnabled": true,
-				"text": "Login",
-				"visible": true,
-				"backgroundColor": "rgba( 0, 108, 184, 1 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "#FFFFFF",
-				"textAlignment": "MIDCENTER",
-				"font": {
-					"size": 16,
-					"bold": true,
-					"italic": false,
-					"family": "Nunito"
-				},
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"alignSelf": "AUTO",
-					"flexGrow": null
-				},
-				"children": [],
-				"name": "loginButton",
-				"parent": "pgLogin",
-				"usePageVariable": true
 			}
 		},
 		{
@@ -802,13 +743,13 @@
 			"themeProps": {},
 			"userProps": {
 				"top": -30,
-				"width": 120,
+				"width": 0,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"height": 30,
 				"text": "Forgot Password",
 				"textColor": "rgba( 153, 153, 153, 1 )",
 				"textAlignment": "TOPLEFT",
-				"visible": false,
+				"visible": true,
 				"flexProps": {
 					"alignSelf": "FLEX_END"
 				},
@@ -819,11 +760,11 @@
 			},
 			"className": ".label",
 			"props": {
-				"width": 120,
+				"width": 0,
 				"height": 30,
 				"touchEnabled": true,
 				"text": "Forgot Password",
-				"visible": false,
+				"visible": true,
 				"multiline": false,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"alpha": 1,
@@ -846,6 +787,137 @@
 				"children": [],
 				"name": "forgotYourPasswordLbl",
 				"parent": "password"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "6f4c87f1",
+			"themeProps": {},
+			"userProps": {
+				"width": null,
+				"height": 70
+			},
+			"className": ".flexLayout",
+			"props": {
+				"height": 70,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE"
+				},
+				"name": "flLoginButton",
+				"parent": "pgLogin",
+				"children": [
+					"loginButton",
+					"activityIndicator1"
+				]
+			}
+		},
+		{
+			"type": "Button",
+			"id": "c0a0f56f",
+			"themeProps": {},
+			"userProps": {
+				"backgroundColor": "rgba( 0, 108, 184, 1 )",
+				"width": null,
+				"text": "Login",
+				"usePageVariable": true,
+				"height": null,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"family": "Nunito",
+					"bold": true
+				}
+			},
+			"className": ".button",
+			"props": {
+				"width": null,
+				"height": null,
+				"touchEnabled": true,
+				"text": "Login",
+				"visible": true,
+				"backgroundColor": "rgba( 0, 108, 184, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#FFFFFF",
+				"textAlignment": "MIDCENTER",
+				"usePageVariable": true,
+				"font": {
+					"size": 16,
+					"bold": true,
+					"italic": false,
+					"family": "Nunito"
+				},
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "AUTO",
+					"flexGrow": 1
+				},
+				"children": [],
+				"name": "loginButton",
+				"parent": "flLoginButton"
+			}
+		},
+		{
+			"type": "ActivityIndicator",
+			"id": "797b5f3c",
+			"themeProps": {},
+			"userProps": {
+				"minHeight": 21,
+				"minWidth": 21,
+				"left": 20,
+				"top": 14,
+				"width": 42,
+				"height": 42,
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				},
+				"input": {
+					"height": 21,
+					"width": 21
+				}
+			},
+			"className": ".activityIndicator",
+			"props": {
+				"touchEnabled": true,
+				"width": 42,
+				"height": 42,
+				"color": "#66cc00",
+				"visible": true,
+				"backgroundColor": "rgba(0,0,0,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"minHeight": 21,
+				"minWidth": 21,
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"alignSelf": "AUTO"
+				},
+				"input": {
+					"height": 21,
+					"width": 21
+				},
+				"name": "activityIndicator1",
+				"parent": "flLoginButton",
+				"children": [],
+				"left": 20,
+				"top": 14
 			}
 		}
 	]
