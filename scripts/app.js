@@ -46,17 +46,3 @@ Router.go("pgLogin", {
 if (System.OS === "Android") {
     Router.sliderDrawer = require("./lib/sliderDrawer");
 }
-
-
-
-
-var endPoints = {
-  production: {
-      login: "abc"
-  }  ,
-  test: {
-      login: "cde"
-  }
-};
-
-var loginURL = endPoints[Application.currentReleaseChannel];
