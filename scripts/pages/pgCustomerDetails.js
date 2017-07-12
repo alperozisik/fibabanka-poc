@@ -371,7 +371,7 @@ function showGraph() {
                 "rotateValues": "0"
             },
             "data": [{
-                "label": "Apple",
+                "label": "Apple2",
                 "value": "810000",
                 "link": "newchart-xml-apple"
             }, {

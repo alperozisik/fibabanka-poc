@@ -86,7 +86,9 @@
 				"bottom": 0,
 				"flexProps": {
 					"flexGrow": null,
-					"positionType": "ABSOLUTE"
+					"positionType": "ABSOLUTE",
+					"right": 0,
+					"bottom": 0
 				}
 			},
 			"className": ".webView",
@@ -100,18 +102,20 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"usePageVariable": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "ABSOLUTE",
-					"flexGrow": null
-				},
-				"name": "wvContent",
-				"parent": "pgChart",
-				"children": [],
 				"left": 0,
 				"top": 0,
 				"right": 0,
-				"bottom": 0
+				"bottom": 0,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "ABSOLUTE",
+					"flexGrow": null,
+					"right": 0,
+					"bottom": 0
+				},
+				"name": "wvContent",
+				"parent": "pgChart",
+				"children": []
 			}
 		},
 		{
@@ -119,15 +123,16 @@
 			"id": "93d73b97",
 			"themeProps": {},
 			"userProps": {
-				"usePageVariable": true
-			},
-			"props": {
-				"name": "aiChart",
-				"isReady": true,
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"alignSelf": "AUTO"
+				"usePageVariable": true,
+				"input": {
+					"height": 21,
+					"width": 21
 				},
+				"minHeight": 21,
+				"minWidth": 21
+			},
+			"className": ".activityIndicator",
+			"props": {
 				"touchEnabled": true,
 				"width": 42,
 				"height": 42,
@@ -137,16 +142,20 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"font": {},
 				"minHeight": 21,
 				"minWidth": 21,
+				"usePageVariable": true,
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "AUTO"
+				},
 				"input": {
 					"height": 21,
 					"width": 21
 				},
+				"name": "aiChart",
 				"parent": "pgChart",
-				"children": [],
-				"usePageVariable": true
+				"children": []
 			}
 		}
 	]

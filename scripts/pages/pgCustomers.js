@@ -205,6 +205,7 @@ const pgCustomers = extend(pgCustomersDesign)(
             sliderDrawer.setPage(page);
             applyTheme();
             page.headerBar.title = lang.customers;
+            sliderDrawer.enabled = true;
         };
 
         function initSearchView() {
