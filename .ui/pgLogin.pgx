@@ -42,8 +42,8 @@
 				],
 				"parent": null,
 				"name": "pgLogin",
-				"width": 468.75,
-				"height": 833.75
+				"width": 187.5,
+				"height": 333.5
 			},
 			"initialized": true
 		},
@@ -52,15 +52,11 @@
 			"id": "51e51ff5",
 			"themeProps": {},
 			"userProps": {
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"color": "rgba( 255, 255, 255, 1 )"
 			},
 			"className": ".statusBar",
 			"props": {
-				"color": "#00A1F1",
+				"color": "rgba( 255, 255, 255, 1 )",
 				"visible": true,
 				"children": [],
 				"parent": "pgLogin",
@@ -85,9 +81,9 @@
 			"className": ".headerBar",
 			"props": {
 				"title": "Login",
-				"titleColor": "#000000",
+				"titleColor": "#FFFFFF",
 				"visible": false,
-				"backgroundColor": "#FFFFFF",
+				"backgroundColor": "#66cc00",
 				"children": [],
 				"parent": "pgLogin",
 				"isRemovable": false,
@@ -218,7 +214,7 @@
 				"children": [],
 				"name": "headerText",
 				"parent": "loginPageHeader",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/fibabanka/ui-editor/img/fibabanka.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/fibabanka/ui-editor/img/fibabanka.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.6009199643262335"
 			}
 		},
 		{
@@ -322,7 +318,7 @@
 			"userProps": {
 				"width": 334,
 				"height": 40,
-				"text": "alper.ozisik@smartface.io\t",
+				"text": "fieldservice",
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"borderColor": "rgba( 197, 197, 197, 1 )",
 				"textColor": "rgba( 63, 63, 63, 1 )",
@@ -336,7 +332,7 @@
 				"height": 40,
 				"width": 334,
 				"touchEnabled": true,
-				"text": "alper.ozisik@smartface.io\t",
+				"text": "fieldservice",
 				"visible": true,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"alpha": 1,
@@ -821,7 +817,7 @@
 				"parent": "pgLogin",
 				"children": [
 					"loginButton",
-					"activityIndicator1"
+					"aiLogin"
 				]
 			}
 		},
@@ -884,6 +880,7 @@
 				"top": 14,
 				"width": 42,
 				"height": 42,
+				"usePageVariable": true,
 				"flexProps": {
 					"positionType": "ABSOLUTE"
 				},
@@ -905,6 +902,9 @@
 				"borderWidth": 0,
 				"minHeight": 21,
 				"minWidth": 21,
+				"left": 20,
+				"top": 14,
+				"usePageVariable": true,
 				"flexProps": {
 					"positionType": "ABSOLUTE",
 					"alignSelf": "AUTO"
@@ -913,11 +913,9 @@
 					"height": 21,
 					"width": 21
 				},
-				"name": "activityIndicator1",
+				"name": "aiLogin",
 				"parent": "flLoginButton",
-				"children": [],
-				"left": 20,
-				"top": 14
+				"children": []
 			}
 		}
 	]

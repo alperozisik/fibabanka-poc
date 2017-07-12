@@ -3,7 +3,7 @@
         "rau": {
             "formatVersion": "1.0.0",
             "hashType": "md5",
-            "profileKey": "myAppKey-Secret",
+            "profileKey": "3DUl5RDlLmbr6g0WR4jfi7KsBVeKTJmN",
             "revision": 1,
             "channels": ["production", "test"],
             "meta": {

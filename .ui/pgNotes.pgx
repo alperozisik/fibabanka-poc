@@ -1,0 +1,177 @@
+{
+	"components": [
+		{
+			"type": "Page",
+			"id": "598b5010",
+			"themeProps": {},
+			"userProps": {},
+			"className": ".page",
+			"version": "6.4.0",
+			"props": {
+				"backgroundColor": "#FFFFFF",
+				"orientation": "PORTRAIT",
+				"flexProps": {
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"direction": "INHERIT",
+					"flexDirection": "COLUMN",
+					"flexWrap": "NOWRAP",
+					"justifyContent": "FLEX_START"
+				},
+				"parent": null,
+				"children": [
+					"statusBar",
+					"headerBar",
+					"taNotes",
+					"btnSpeech"
+				],
+				"name": "pgNotes",
+				"width": 187.5,
+				"height": 301.5
+			},
+			"initialized": true
+		},
+		{
+			"type": "StatusBar",
+			"id": "aa9762be",
+			"themeProps": {},
+			"userProps": {},
+			"className": ".statusBar",
+			"props": {
+				"color": "#66cc00",
+				"visible": true,
+				"parent": "pgNotes",
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"height": 20
+			}
+		},
+		{
+			"type": "HeaderBar",
+			"id": "18a7dc2e",
+			"themeProps": {},
+			"userProps": {
+				"title": "Notes"
+			},
+			"className": ".headerBar",
+			"props": {
+				"title": "Notes",
+				"titleColor": "#FFFFFF",
+				"visible": true,
+				"backgroundColor": "#66cc00",
+				"parent": "pgNotes",
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"height": 44
+			}
+		},
+		{
+			"type": "TextArea",
+			"id": "b8e66efc",
+			"themeProps": {},
+			"userProps": {
+				"width": null,
+				"height": 200,
+				"right": 0,
+				"left": 0,
+				"top": 0,
+				"bottom": 100,
+				"usePageVariable": true,
+				"text": null,
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"right": 0,
+					"bottom": 100
+				}
+			},
+			"className": ".textArea",
+			"props": {
+				"height": 200,
+				"width": null,
+				"touchEnabled": true,
+				"text": null,
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "rgba(0,0,0,1)",
+				"textAlignment": "TOPLEFT",
+				"right": 0,
+				"left": 0,
+				"top": 0,
+				"bottom": 100,
+				"usePageVariable": true,
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Arial"
+				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "ABSOLUTE",
+					"right": 0,
+					"bottom": 100
+				},
+				"name": "taNotes",
+				"parent": "pgNotes",
+				"children": []
+			}
+		},
+		{
+			"type": "Button",
+			"id": "2a349956",
+			"themeProps": {},
+			"userProps": {
+				"width": null,
+				"left": 0,
+				"right": 0,
+				"bottom": 0,
+				"height": 70,
+				"text": "Start Recording",
+				"usePageVariable": true,
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"right": 0,
+					"bottom": 0
+				}
+			},
+			"className": ".button",
+			"props": {
+				"width": null,
+				"height": 70,
+				"touchEnabled": true,
+				"text": "Start Recording",
+				"visible": true,
+				"backgroundColor": "#006cb8",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#FFFFFF",
+				"textAlignment": "MIDCENTER",
+				"left": 0,
+				"right": 0,
+				"bottom": 0,
+				"usePageVariable": true,
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Arial"
+				},
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"alignSelf": "AUTO",
+					"right": 0,
+					"bottom": 0
+				},
+				"name": "btnSpeech",
+				"parent": "pgNotes",
+				"children": []
+			}
+		}
+	]
+}

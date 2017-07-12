@@ -1,0 +1,303 @@
+{
+	"components": [
+		{
+			"type": "Page",
+			"id": "56dad56b",
+			"themeProps": {},
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
+				"flexProps": {
+					"alignItems": "CENTER",
+					"justifyContent": "CENTER"
+				},
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"defaults": {}
+			},
+			"className": ".page",
+			"version": "6.4.0",
+			"props": {
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
+				"orientation": "PORTRAIT",
+				"flexProps": {
+					"alignContent": "STRETCH",
+					"alignItems": "CENTER",
+					"direction": "INHERIT",
+					"flexDirection": "COLUMN",
+					"flexWrap": "NOWRAP",
+					"justifyContent": "CENTER"
+				},
+				"children": [
+					"statusBar",
+					"headerBar",
+					"aiWait",
+					"lvCustomers",
+					"btnAddCustomer",
+					"imgAddCustomer"
+				],
+				"parent": null,
+				"name": "pgCustomers",
+				"width": 187.5,
+				"height": 301.5
+			},
+			"initialized": true
+		},
+		{
+			"type": "StatusBar",
+			"id": "d88ee3ce",
+			"themeProps": {},
+			"userProps": {
+				"color": "rgba( 44, 50, 57, 1 )",
+				"style": "LIGHTCONTENT",
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"flexProps": {},
+				"defaults": {}
+			},
+			"className": ".statusBar",
+			"props": {
+				"color": "rgba( 44, 50, 57, 1 )",
+				"visible": true,
+				"style": "LIGHTCONTENT",
+				"children": [],
+				"parent": "pgCustomers",
+				"isRemovable": false,
+				"name": "statusBar",
+				"height": 20
+			}
+		},
+		{
+			"type": "HeaderBar",
+			"id": "bca0846a",
+			"themeProps": {},
+			"userProps": {
+				"title": "Customers",
+				"backgroundColor": "rgba( 44, 50, 57, 1 )",
+				"titleColor": "rgba( 255, 255, 255, 1 )",
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"flexProps": {},
+				"defaults": {}
+			},
+			"className": ".headerBar",
+			"props": {
+				"title": "Customers",
+				"titleColor": "rgba( 255, 255, 255, 1 )",
+				"visible": true,
+				"backgroundColor": "rgba( 44, 50, 57, 1 )",
+				"children": [],
+				"parent": "pgCustomers",
+				"isRemovable": false,
+				"name": "headerBar",
+				"height": 44
+			}
+		},
+		{
+			"type": "ListView",
+			"id": "dfc49879",
+			"themeProps": {},
+			"userProps": {
+				"width": null,
+				"height": null,
+				"left": 0,
+				"top": 7.43,
+				"right": 0,
+				"bottom": 0,
+				"usePageVariable": true,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"itemCount": 4,
+				"rowHeight": 106.43,
+				"visible": false,
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"right": 0,
+					"bottom": 0
+				},
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"defaults": {}
+			},
+			"className": ".listView",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"multiline": false,
+				"rowHeight": 106.43,
+				"itemCount": 4,
+				"visible": false,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"left": 0,
+				"top": 7.43,
+				"right": 0,
+				"bottom": 0,
+				"usePageVariable": true,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "ABSOLUTE",
+					"right": 0,
+					"bottom": 0
+				},
+				"children": [],
+				"name": "lvCustomers",
+				"parent": "pgCustomers"
+			}
+		},
+		{
+			"type": "Button",
+			"id": "9653a2f3",
+			"themeProps": {},
+			"userProps": {
+				"usePageVariable": true,
+				"text": "+",
+				"textColor": "rgba( 46, 193, 169, 1 )",
+				"backgroundColor": "rgba( 144, 19, 254, 0 )",
+				"width": 50,
+				"height": 50,
+				"borderRadius": 25,
+				"right": 8.5,
+				"bottom": 10,
+				"visible": false,
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"right": 8.5,
+					"bottom": 10
+				},
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"defaults": {}
+			},
+			"className": ".button",
+			"props": {
+				"width": 50,
+				"height": 50,
+				"touchEnabled": true,
+				"text": "+",
+				"visible": false,
+				"backgroundColor": "rgba( 144, 19, 254, 0 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "rgba( 46, 193, 169, 1 )",
+				"textAlignment": "MIDCENTER",
+				"usePageVariable": true,
+				"borderRadius": 25,
+				"right": 8.5,
+				"bottom": 10,
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Arial"
+				},
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"alignSelf": "AUTO",
+					"right": 8.5,
+					"bottom": 10
+				},
+				"children": [],
+				"name": "btnAddCustomer",
+				"parent": "pgCustomers"
+			}
+		},
+		{
+			"type": "ActivityIndicator",
+			"id": "f9c1dfb3",
+			"themeProps": {},
+			"userProps": {
+				"usePageVariable": true,
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"flexProps": {},
+				"defaults": {},
+				"input": {
+					"height": 21,
+					"width": 21
+				},
+				"minHeight": 21,
+				"minWidth": 21
+			},
+			"className": ".activityIndicator",
+			"props": {
+				"touchEnabled": true,
+				"width": 42,
+				"height": 42,
+				"color": "#ADADAD",
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"minHeight": 21,
+				"minWidth": 21,
+				"usePageVariable": true,
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "AUTO"
+				},
+				"children": [],
+				"name": "aiWait",
+				"parent": "pgCustomers",
+				"input": {
+					"height": 21,
+					"width": 21
+				}
+			}
+		},
+		{
+			"type": "ImageView",
+			"id": "86a2247c",
+			"themeProps": {},
+			"userProps": {
+				"width": 55,
+				"height": 55,
+				"right": 8.5,
+				"bottom": 10,
+				"image": "add_customer.png",
+				"usePageVariable": true,
+				"visible": false,
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"right": 8.5,
+					"bottom": 10
+				}
+			},
+			"className": ".imageView",
+			"props": {
+				"width": 55,
+				"height": 55,
+				"touchEnabled": true,
+				"visible": false,
+				"imageFillType": "NORMAL",
+				"backgroundColor": "rgba(0,0,0,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"right": 8.5,
+				"bottom": 10,
+				"image": "add_customer.png",
+				"usePageVariable": true,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "ABSOLUTE",
+					"right": 8.5,
+					"bottom": 10
+				},
+				"children": [],
+				"name": "imgAddCustomer",
+				"parent": "pgCustomers",
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/fibabanka/ui-editor/img/add_customer.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.5431163262863481"
+			}
+		}
+	]
+}

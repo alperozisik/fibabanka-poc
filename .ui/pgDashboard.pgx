@@ -1,0 +1,69 @@
+{
+	"components": [
+		{
+			"type": "Page",
+			"id": "3c35cf5a",
+			"themeProps": {},
+			"userProps": {},
+			"className": ".page",
+			"version": "6.4.0",
+			"props": {
+				"backgroundColor": "#FFFFFF",
+				"orientation": "PORTRAIT",
+				"flexProps": {
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"direction": "INHERIT",
+					"flexDirection": "COLUMN",
+					"flexWrap": "NOWRAP",
+					"justifyContent": "FLEX_START"
+				},
+				"parent": null,
+				"children": [
+					"statusBar",
+					"headerBar"
+				],
+				"name": "pgDashboard",
+				"width": 187.5,
+				"height": 301.5
+			},
+			"initialized": true
+		},
+		{
+			"type": "StatusBar",
+			"id": "20ae1755",
+			"themeProps": {},
+			"userProps": {},
+			"className": ".statusBar",
+			"props": {
+				"color": "#00A1F1",
+				"visible": true,
+				"parent": "pgDashboard",
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"height": 20
+			}
+		},
+		{
+			"type": "HeaderBar",
+			"id": "b7195d4f",
+			"themeProps": {},
+			"userProps": {
+				"title": "Dashboard"
+			},
+			"className": ".headerBar",
+			"props": {
+				"title": "Dashboard",
+				"titleColor": "#000000",
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"parent": "pgDashboard",
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"height": 44
+			}
+		}
+	]
+}
