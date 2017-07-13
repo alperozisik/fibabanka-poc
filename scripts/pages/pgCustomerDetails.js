@@ -158,17 +158,13 @@ const pgCustomerDetails = extend(pgCustomerDetailsDesign)(
         function loadData(customerDetails) {
             if (!svCustomerDetail)
                 return;
-            if (svCustomerDetail.layout) {
-                var oldLayout = svCustomerDetail.layout;
-                svCustomerDetail.removeChild(oldLayout);
-                delete svCustomerDetail.layout;
-            }
             var contactData = {};
 
             var layout = new FlexLayout({
                 left: 0,
                 top: 0,
                 right: 0,
+                bottom: 0,
                 positionType: FlexLayout.PositionType.ABSOLUTE,
                 backgroundColor: Color.TRANSPARENT,
                 alignItems: FlexLayout.AlignItems.STRETCH,
@@ -240,9 +236,9 @@ const pgCustomerDetails = extend(pgCustomerDetailsDesign)(
                 layout.addChild(shadow2);
                 layoutHeight += shadow.size;
             }
-            layout.height = layoutHeight;
-            svCustomerDetail.addChild(layout);
-            svCustomerDetail.layout = layout;
+            
+            svCustomerDetail.layout.height = layoutHeight;
+            svCustomerDetail.layout.addChild(layout);
             page.imgCustomerPicture.image = customerDetails.picture ||
                 Image.createFromFile("images://customers_empty.png");
 
